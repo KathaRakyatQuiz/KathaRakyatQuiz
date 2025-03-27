@@ -3,19 +3,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KathaRakyat</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/reset.css">
-
-    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
-
+    <title>Kuis Katha Rakyat</title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
+    <body>
 
-<body>
-    <div class="main">
-        <h1>THIS WEBSITE IS UNDER DEVELOPMENT</h1>
-        <p>Personality Quiz</p>
+    <h1>KathaRakyat - Tokoh cerita rakyat manakah kamu?</h1>
+
+    <button id="startQuiz" class="question">Mulai Kuis</button>
+
+    <div class="question" id="question1" style="display: none;">
+        <p>Kamu terbangun dari tidur dan menemukan dirimu di masa lalu. Siapakah dirimu?</p>
+        <div class="answer"><button onclick="answerQuestion(1, 'a')">Nelayan</button></div>
+        <div class="answer"><button onclick="answerQuestion(1, 'b')">Manusia Setengah Hewan</button></div>
+        <div class="answer"><button onclick="answerQuestion(1, 'c')">Putri Kerajaan</button></div>
+        <div class="answer"><button onclick="answerQuestion(1, 'd')">Putri Alam</button></div>
+        <div class="answer"><button onclick="answerQuestion(1, 'e')">Pedagang</button></div>
+        <div class="answer"><button onclick="answerQuestion(1, 'f')">Petani</button></div>
+        <div class="answer"><button onclick="answerQuestion(1, 'g')">Gadis Desa</button></div>
+        <div class="answer"><button onclick="answerQuestion(1, 'h')">Ratu Laut</button></div>
     </div>
-</body>
 
+    <div class="question" id="question2" style="display: none;">
+        <p>Saat kamu menjelajahi daerah tersebut, kamu menemukan sekumpulan babi hutan liar di dekatmu! Apa yang akan kamu lakukan?</p>
+        <div class="answer"><button onclick="answerQuestion(2, 'a')">Aku akan menyerang dan memastikan mereka tidak akan menggangguku lagi!</button></div>
+        <div class="answer"><button onclick="answerQuestion(2, 'b')">Aku akan menyusun strategi, tapi aku tidak yakin apakah itu akan berhasil...</button></div>
+        <div class="answer"><button onclick="answerQuestion(2, 'c')">Aku rasa mereka tidak akan melakukan apa-apa, jadi aku akan membiarkan mereka.</button></div>
+        <div class="answer"><button onclick="answerQuestion(2, 'd')">Aku akan tetap santai dan mencari tempat yang aman, mereka mungkin tidak berbahaya.</button></div>
+        <div class="answer"><button onclick="answerQuestion(2, 'e')">Mereka kelihatannya jinak, aku akan mendekati dan menyapa mereka!</button></div>
+        <div class="answer"><button onclick="answerQuestion(2, 'f')"> Aku akan mendekat dan mencoba untuk mengusir mereka!</button></div>
+        <div class="answer"><button onclick="answerQuestion(2, 'g')">Aku akan mengamati dan mencari tahu alasan mereka ada di sini.</button></div>
+        <div class="answer"><button onclick="answerQuestion(2, 'h')">Aku akan menyingkirkan mereka dengan cepat, pasti mereka akan lari begitu melihatku.</button></div>
+    </div>
+
+    <div class="question" id="question3" style="display: none;">
+        <p>Saat kamu sedang berjalan-jalan, kamu menemukan makhluk bersahabat yang bersedia menemanimu. Makhluk apakah itu?</p>
+        <div class="answer"><button onclick="answerQuestion(3, 'a')">Ikan emas ajaib</button></div>
+        <div class="answer"><button onclick="answerQuestion(3, 'b')">Landak</button></div>
+        <div class="answer"><button onclick="answerQuestion(3, 'c')">Keong emas</button></div>
+        <div class="answer"><button onclick="answerQuestion(3, 'd')">Kerbau buleng</button></div>
+        <div class="answer"><button onclick="answerQuestion(3, 'e')">Burung cendrawasih</button></div>
+        <div class="answer"><button onclick="answerQuestion(3, 'f')">Babi</button></div>
+        <div class="answer"><button onclick="answerQuestion(3, 'g')">Kura-kura</button></div>
+        <div class="answer"><button onclick="answerQuestion(3, 'h')">Penyu</button></div>
+    </div>
+
+    <div class="question" id="question4" style="display: none;">
+        <p>Bagaimana kamu akan merawat atau mengakrabkan diri dengan teman barumu?</p>
+        <div class="answer"><button onclick="answerQuestion(4, 'a')">Aku harus melatihnya agar kami bisa bertahan hidup bersama di dunia ini!</button></div>
+        <div class="answer"><button onclick="answerQuestion(4, 'b')">Kamu sudah makan belum? Tunggu, aku akan carikan makanan untukmu.</button></div>
+        <div class="answer"><button onclick="answerQuestion(4, 'c')">Kita jalan-jalan saja bersama, nanti juga akan ketemu jalan keluarnya.</button></div>
+        <div class="answer"><button onclick="answerQuestion(4, 'd')">Apa aku benar-benar bisa merawatnya? Bagaimana kalau aku tidak bisa memberinya makan dan dia mati?</button></div>
+        <div class="answer"><button onclick="answerQuestion(4, 'e')">Kita punya teman baru?</button></div>
+        <div class="answer"><button onclick="answerQuestion(4, 'f')">Biarkan saja dia melakukan apa pun yang dia mau, kalau dia membuat kekacauan, ya biarin aja!</button></div>
+        <div class="answer"><button onclick="answerQuestion(4, 'g')">“Hai, kamu dari mana? Bagaimana kamu menemukanku? Kenapa kamu bisa ada di sini?”</button></div>
+        <div class="answer"><button onclick="answerQuestion(4, 'h')">“Oke, tunjukkan kepadaku apa yang bisa kamu lakukan.”</button></div>
+    </div>
+
+    <div class="question" id="question5" style="display: none;">
+        <p>Seiring berjalannya waktu, kamu bertemu seekor gagak yang mengutukmu dengan penyakit. Gagak itu berkata bahwa hanya Elang Sakti yang bisa menyembuhkanmu. Apa yang akan kamu lakukan?</p>
+        <div class="answer"><button onclick="answerQuestion(5, 'a')">Aku akan segera mencari Elang Sakti itu! Mari kita selesaikan segera!</button></div>
+        <div class="answer"><button onclick="answerQuestion(5, 'b')">Harus aku rencanakan dulu, mungkin aku akan bertanya ke orang lain?</button></div>
+        <div class="answer"><button onclick="answerQuestion(5, 'c')">Ya mau bagaimana lagi? Kalau Elang Sakti memang ada, dia pasti akan menemukanku.</button></div>
+        <div class="answer"><button onclick="answerQuestion(5, 'd')">Aku rasa Elang Sakti bahkan tidak ada... tapi aku tetap akan berjalan-jalan mencarinya.</button></div>
+        <div class="answer"><button onclick="answerQuestion(5, 'e')">Aku pasti langsung mencari Elang Sakti, tapi siapa tahu? Bisa saja aku malah teralihkan di tengah jalan!</button></div>
+        <div class="answer"><button onclick="answerQuestion(5, 'f')">Aku akan mencari Elang Sakti tanpa henti, bahkan sampai malam tiba. Aku yakin dia ada di sekitar sini.</button></div>
+        <div class="answer"><button onclick="answerQuestion(5, 'g')">Apa aku benar-benar harus mencari Elang Sakti?</button></div>
+        <div class="answer"><button onclick="answerQuestion(5, 'h')">Aku akan mengancam gagak itu supaya memberitahuku dimana Elang Sakti berada!</button></div>
+    </div>
+
+    <div class="question" id="question6" style="display: none;">
+        <p>Semesta memberimu satu alat untuk bertahan hidup di timeline ini. Alat apa yang akan kamu pilih?</p>
+        <div class="answer"><button onclick="answerQuestion(6, 'a')">Pancingan — biar bisa dapat lebih banyak ikan!</button></div>
+        <div class="answer"><button onclick="answerQuestion(6, 'b')">Keranjang rotan — aku bisa menyimpan barang-barang yang berguna disini</button></div>
+        <div class="answer"><button onclick="answerQuestion(6, 'c')">Panci - aku bisa masak dan memukul orang dengan ini</button></div>
+        <div class="answer"><button onclick="answerQuestion(6, 'd')">Keris — ini senjata rahasiaku</button></div>
+        <div class="answer"><button onclick="answerQuestion(6, 'e')">Benang — akan kurajut pakaian agar aku tetap hangat</button></div>
+        <div class="answer"><button onclick="answerQuestion(6, 'f')">Tombak — aku bisa menyerang dari jauh.</button></div>
+        <div class="answer"><button onclick="answerQuestion(6, 'g')">Tifa — aku mau main musik saja untuk menghibur diriku</button></div>
+        <div class="answer"><button onclick="answerQuestion(6, 'h')">Kekuatan air ajaib — Aku akan menguasai laut dan meminta bantuan teman-teman di laut untuk menolongku</button></div>
+    </div>
+
+    <div class="question" id="question7" style="display: none;">
+        <p>Saat malam tiba, tiba-tiba kamu mendengar seseorang memanggil namamu. Itu Elang Sakti! Dia menawarkan untuk menyembuhkanmu. Bagaimana reaksimu?</p>
+        <div class="answer"><button onclick="answerQuestion(7, 'a')">Cepat sembuhkan aku, Elang Sakti! Aku sudah menunggu terlalu lama!</button></div>
+        <div class="answer"><button onclick="answerQuestion(7, 'b')">Oh terima kasih! Kamu sudah makan belum, Elang Sakti? Pasti harimu juga panjang (sambil mengelus kepala Elang)</button></div>
+        <div class="answer"><button onclick="answerQuestion(7, 'c')">Hai, aku nggak nyangka kamu ada di sini. Terima kasih atas bantuannya, aku hampir menyerah</button></div>
+        <div class="answer"><button onclick="answerQuestion(7, 'd')">Terima kasih, Elang Sakti! Sekarang kamu bisa ikut jalan-jalan denganku!</button></div>
+        <div class="answer"><button onclick="answerQuestion(7, 'e')">Oh yay! Aku tahu kamu pasti bakal muncul juga, terima kasih!!</button></div>
+        <div class="answer"><button onclick="answerQuestion(7, 'f')">Wah, makasih bantuannya—Eh, kamu punya kekuatan lain nggak?</button></div>
+        <div class="answer"><button onclick="answerQuestion(7, 'g')">Menangis “TERIMA KASIH” peluk Elang Sakti erat-erat</button></div>
+        <div class="answer"><button onclick="answerQuestion(7, 'h')">Hmm, akhirnya... makasih ya. Selamat malam.</button></div>
+    </div>
+
+    <div class="question" id="question8" style="display: none;">
+        <p>Untuk mengakhiri hari, kamu, teman barumu, dan Elang Sakti duduk bersama di tepi danau. Apa yang akan kamu lakukan?</p>
+        <div class="answer"><button onclick="answerQuestion(8, 'a')">Aku akan bermain kejar-kejaran dengan mereka, lalu berlari sekencang mungkin biar mereka nggak bisa menangkapku!</button></div>
+        <div class="answer"><button onclick="answerQuestion(8, 'b')">Aku akan mengelilingi danau untuk mencari ikan untuk makan malam</button></div>
+        <div class="answer"><button onclick="answerQuestion(8, 'c')">Bercanda-canda bersama teman baruku dan Elang Sakti</button></div>
+        <div class="answer"><button onclick="answerQuestion(8, 'd')">Aku bakal deep talk sama teman baruku dan Elang Sakti sepanjang malam</button></div>
+        <div class="answer"><button onclick="answerQuestion(8, 'e')">WEEEEEEEEE nyebur ke danau!</button></div>
+        <div class="answer"><button onclick="answerQuestion(8, 'f')">Memercikan air ke semua orang terus lari!</button></div>
+        <div class="answer"><button onclick="answerQuestion(8, 'g')">Aku bakal tiduran aja... merem sebentar</button></div>
+        <div class="answer"><button onclick="answerQuestion(8, 'h')">Aku bakal menantang mereka buat adu cepat berenang lawan aku!</button></div>
+    </div>
+
+    <div class="question" id="question9" style="display: none;">
+        <p>Keesokan paginya, kamu terbangun dalam tubuhmu sendiri. Apakah semua itu hanya mimpi? Kamu melihat keluargamu di rumah. Apa yang akan kamu lakukan?</p>
+        <div class="answer"><button onclick="answerQuestion(9, 'a')">Oke, aku harus pergi kerja sekarang</button></div>
+        <div class="answer"><button onclick="answerQuestion(9, 'b')">Ahh jadi itu cuma mimpi... sekarang aku lupa jadwalku hari ini! (panik)</button></div>
+        <div class="answer"><button onclick="answerQuestion(9, 'c')">Oh baiklah, yay~ (balik ke rutinitas biasa)</button></div>
+        <div class="answer"><button onclick="answerQuestion(9, 'd')">Yay, keluargaku masih disini..Mereka lagi apa ya?</button></div>
+        <div class="answer"><button onclick="answerQuestion(9, 'e')">Aku nggak sabar untuk ceritain mimpi anehku ke mereka!</button></div>
+        <div class="answer"><button onclick="answerQuestion(9, 'f')">Yang tadi itu pasti nyata! Mana keluargaku?! (langsung menceritakan kejadian tersebut ke keluarga)</button></div>
+        <div class="answer"><button onclick="answerQuestion(9, 'g')">(Langsung memeluk erat mereka) Aku kira aku kehilangan kalian. Eh, maksudku, selamat pagi!</button></div>
+        <div class="answer"><button onclick="answerQuestion(9, 'h')">Sudah kuduga, nggak mungkin itu nyata!</button></div>
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+        var option1 = 0;
+        var option2 = 0;
+        var option3 = 0;
+        var option4 = 0;
+        var option5 = 0;
+        var option6 = 0;
+        var option7 = 0;
+        var option8 = 0;
+        var currentQuestion = 1;
+
+        document.getElementById('startQuiz').onclick = function() {
+        this.style.display = 'none';
+        document.getElementById('question1').style.display = 'block';
+    };
+
+        function answerQuestion(questionNumber, answer) {
+            if (questionNumber === 1) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                else if (answer === 'g') option7++;
+                else if (answer === 'h') option8++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'block';
+                document.getElementById('question3').style.display = 'none';
+                document.getElementById('question4').style.display = 'none';
+                document.getElementById('question5').style.display = 'none';
+                document.getElementById('question6').style.display = 'none';
+                document.getElementById('question7').style.display = 'none';
+                document.getElementById('question8').style.display = 'none';
+                document.getElementById('question9').style.display = 'none';
+            } 
+            
+            else if (questionNumber === 2) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                else if (answer === 'g') option7++;
+                else if (answer === 'h') option8++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'none';
+                document.getElementById('question3').style.display = 'block';
+                document.getElementById('question4').style.display = 'none';
+                document.getElementById('question5').style.display = 'none';
+                document.getElementById('question6').style.display = 'none';
+                document.getElementById('question7').style.display = 'none';
+                document.getElementById('question8').style.display = 'none';
+                document.getElementById('question9').style.display = 'none';
+            }
+
+            else if (questionNumber === 3) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                else if (answer === 'g') option7++;
+                else if (answer === 'h') option8++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'none';
+                document.getElementById('question3').style.display = 'none';
+                document.getElementById('question4').style.display = 'block';
+                document.getElementById('question5').style.display = 'none';
+                document.getElementById('question6').style.display = 'none';
+                document.getElementById('question7').style.display = 'none';
+                document.getElementById('question8').style.display = 'none';
+                document.getElementById('question9').style.display = 'none';
+            }
+
+            else if (questionNumber === 4) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                else if (answer === 'g') option7++;
+                else if (answer === 'h') option8++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'none';
+                document.getElementById('question3').style.display = 'none';
+                document.getElementById('question4').style.display = 'none';
+                document.getElementById('question5').style.display = 'block';
+                document.getElementById('question6').style.display = 'none';
+                document.getElementById('question7').style.display = 'none';
+                document.getElementById('question8').style.display = 'none';
+                document.getElementById('question9').style.display = 'none';
+            }
+
+            else if (questionNumber === 5) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                else if (answer === 'g') option7++;
+                else if (answer === 'h') option8++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'none';
+                document.getElementById('question3').style.display = 'none';
+                document.getElementById('question4').style.display = 'none';
+                document.getElementById('question5').style.display = 'none';
+                document.getElementById('question6').style.display = 'block';
+                document.getElementById('question7').style.display = 'none';
+                document.getElementById('question8').style.display = 'none';
+                document.getElementById('question9').style.display = 'none';
+            }
+
+            else if (questionNumber === 6) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                else if (answer === 'g') option7++;
+                else if (answer === 'h') option8++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'none';
+                document.getElementById('question3').style.display = 'none';
+                document.getElementById('question4').style.display = 'none';
+                document.getElementById('question5').style.display = 'none';
+                document.getElementById('question6').style.display = 'none';
+                document.getElementById('question7').style.display = 'block';
+                document.getElementById('question8').style.display = 'none';
+                document.getElementById('question9').style.display = 'none';
+            }
+
+            else if (questionNumber === 7) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                else if (answer === 'g') option7++;
+                else if (answer === 'h') option8++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'none';
+                document.getElementById('question3').style.display = 'none';
+                document.getElementById('question4').style.display = 'none';
+                document.getElementById('question5').style.display = 'none';
+                document.getElementById('question6').style.display = 'none';
+                document.getElementById('question7').style.display = 'none';
+                document.getElementById('question8').style.display = 'block';
+                document.getElementById('question9').style.display = 'none';
+            }
+
+            else if (questionNumber === 8) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                else if (answer === 'g') option7++;
+                else if (answer === 'h') option8++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'none';
+                document.getElementById('question3').style.display = 'none';
+                document.getElementById('question4').style.display = 'none';
+                document.getElementById('question5').style.display = 'none';
+                document.getElementById('question6').style.display = 'none';
+                document.getElementById('question7').style.display = 'none';
+                document.getElementById('question8').style.display = 'none';
+                document.getElementById('question9').style.display = 'block';
+            }
+
+            else if (questionNumber === 9) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                else if (answer === 'g') option7++;
+                else if (answer === 'h') option8++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'none';
+                document.getElementById('question3').style.display = 'none';
+                document.getElementById('question4').style.display = 'none';
+                document.getElementById('question5').style.display = 'none';
+                document.getElementById('question6').style.display = 'none';
+                document.getElementById('question7').style.display = 'none';
+                document.getElementById('question8').style.display = 'none';
+                document.getElementById('question9').style.display = 'none';
+                showResult();
+            }
+        }
+
+        function showResult() {
+        var maxOptionValue = Math.max(option1, option2, option3, option4, option5, option6, option7, option8);
+        var tiedOptions = [];
+
+        if (option1 === maxOptionValue) tiedOptions.push("Toba.html");
+        if (option2 === maxOptionValue) tiedOptions.push("Tapih.html");
+        if (option3 === maxOptionValue) tiedOptions.push("CandraKirana.html");
+        if (option4 === maxOptionValue) tiedOptions.push("PutriTandampalik.html");
+        if (option5 === maxOptionValue) tiedOptions.push("Kweiya.html");
+        if (option6 === maxOptionValue) tiedOptions.push("PakPetani.html");
+        if (option7 === maxOptionValue) tiedOptions.push("Majojaru.html");
+        if (option8 === maxOptionValue) tiedOptions.push("RatuPantaiKuta.html");
+
+        // INI BUAT RANDOMLY PICK
+        var randomResult = tiedOptions[Math.floor(Math.random() * tiedOptions.length)];
+        window.location.href = randomResult;
+    }
+    </script>
+
+</body>
 </html>
