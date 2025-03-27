@@ -12,24 +12,24 @@ body {
     background-color: #EFE6D3;
     margin: 0;
     padding-top: 0;
-    background-image: url(/img/BackgroundHeader-06.png);
+    background-image: url('../img/BackgroundHeader-06.png');
     background-size: 100vw auto;
     height: 100vh;
 }
 
 @font-face {
     font-family: Header;
-    src: url(/font/youngserif-regular.ttf);
+    src: url('../font/youngserif-regular.ttf');
 }
 
 @font-face {
     font-family: SubHeader;
-    src: url(/font/Montserrat-Bold.ttf);
+    src: url('../font/Montserrat-Bold.ttf');
 }
 
 @font-face {
     font-family: Body;
-    src: url(/font/Montserrat-Regular.ttf);
+    src: url('../font/Montserrat-Regular.ttf');
 }
 
 h1 {
@@ -91,35 +91,35 @@ button:hover {
 }
 
 .toba {
-    background-image: url(/img/BackgroundToba.png);
+    background-image: url('../img/BackgroundToba.png');
 }
 
 .kweiya {
-    background-image: url(/img/BackgroundKweiya.png);
+    background-image: url('../img/BackgroundKweiya.png');
 }
 
 .majojaru {
-    background-image: url(/img/BackgroundMajojaru.png);
+    background-image: url('../img/BackgroundMajojaru.png');
 }
 
 .putriTandampalik {
-    background-image: url(/img/BackgroundPutriTandampalik.png);
+    background-image: url('../img/BackgroundPutriTandampalik.png');
 }
 
 .pakPetani {
-    background-image: url(/img/BackgroundPakPetani.png);
+    background-image: url('../img/BackgroundPakPetani.png');
 }
 
 .candraKirana {
-    background-image: url(/img/BackgroundCandraKirana.png);
+    background-image: url('../img/BackgroundCandraKirana.png');
 }
 
 .tapih {
-    background-image: url(/img/BackgroundTapih.png);
+    background-image: url('../img/BackgroundTapih.png');
 }
 
 .ratuPantaiKuta {
-    background-image: url(/img/BackgroundRatuPantaiKuta.png);
+    background-image: url('../img/BackgroundRatuPantaiKuta.png');
 }
 
 .imageCharacter {
@@ -144,7 +144,7 @@ button:hover {
 .descriptionCharacter {
     width: 64vw;
     height: 80vh;
-    background-image: url(/img/texture.avif);
+    background-image: url('../img/texture.avif');
     background-repeat: no-repeat;
     background-size: 100vw auto;
     padding: 8vw;
@@ -201,7 +201,7 @@ button:hover {
         background-color: #EFE6D3;
         margin: 0;
         padding-top: 0;
-        background-image: url(/img/BackgroundHeaderTablet-01.png);
+        background-image: url('../img/BackgroundHeaderTablet-01.png');
     }
 
     h1 {
@@ -243,42 +243,42 @@ button:hover {
     }
 
     .toba {
-        background-image: url(/img/BackgroundTobaMobile.png);
+        background-image: url('../img/BackgroundTobaMobile.png');
         background-repeat: no-repeat;
     }
 
     .kweiya {
-        background-image: url(/img/BackgroundKweiyaMobile.png);
+        background-image: url('../img/BackgroundKweiyaMobile.png');
         background-repeat: no-repeat;
     }
 
     .majojaru {
-        background-image: url(/img/BackgroundMajojaruMobile.png);
+        background-image: url('../img/BackgroundMajojaruMobile.png');
         background-repeat: no-repeat;
     }
 
     .putriTandampalik {
-        background-image: url(/img/BackgroundPutriTandampalikMobile.png);
+        background-image: url('../img/BackgroundPutriTandampalikMobile.png');
         background-repeat: no-repeat;
     }
 
     .pakPetani {
-        background-image: url(/img/BackgroundPakPetaniMobile.png);
+        background-image: url('../img/BackgroundPakPetaniMobile.png');
         background-repeat: no-repeat;
     }
 
     .candraKirana {
-        background-image: url(/img/BackgroundCandraKiranaMobile.png);
+        background-image: url('../img/BackgroundCandraKiranaMobile.png');
         background-repeat: no-repeat;
     }
 
     .tapih {
-        background-image: url(/img/BackgroundTapihMobile.png);
+        background-image: url('../img/BackgroundTapihMobile.png');
         background-repeat: no-repeat;
     }
 
     .ratuPantaiKuta {
-        background-image: url(/img/BackgroundRatuPantaiKutaMobile.png);
+        background-image: url('../img/BackgroundRatuPantaiKutaMobile.png');
         background-repeat: no-repeat;
     }
     
@@ -295,7 +295,7 @@ button:hover {
     .descriptionCharacter {
         width: 90vw;
         height: 112vh;
-        background-image: url(/img/texture.avif);
+        background-image: url('../img/texture.avif');
         background-repeat: no-repeat;
         background-size: auto 110vh;
         padding: 8vw;
@@ -342,7 +342,7 @@ button:hover {
 
 @media (max-width:600px) {
     body {
-        background-image: url(/img/BackgroundHeaderMobile-02.png);
+        background-image: url('../img/BackgroundHeaderMobile-02.png');
     }
 
     h1 {
@@ -379,49 +379,49 @@ button:hover {
     }
 
     .characterContainer {
-        background-image: url(/img/BackgroundTobaMobile.png);
+        background-image: url('../img/BackgroundTobaMobile.png');
         background-size: 100vw auto;
         background-repeat: none;
         position: relative;
     }
 
     .toba {
-        background-image: url(/img/BackgroundTobaMobile.png);
+        background-image: url('../img/BackgroundTobaMobile.png');
         background-repeat: no-repeat;
     }
 
     .kweiya {
-        background-image: url(/img/BackgroundKweiyaMobile.png);
+        background-image: url('../img/BackgroundKweiyaMobile.png');
         background-repeat: no-repeat;
     }
 
     .majojaru {
-        background-image: url(/img/BackgroundMajojaruMobile.png);
+        background-image: url('../img/BackgroundMajojaruMobile.png');
         background-repeat: no-repeat;
     }
 
     .putriTandampalik {
-        background-image: url(/img/BackgroundPutriTandampalikMobile.png);
+        background-image: url('../img/BackgroundPutriTandampalikMobile.png');
         background-repeat: no-repeat;
     }
 
     .pakPetani {
-        background-image: url(/img/BackgroundPakPetaniMobile.png);
+        background-image: url('../img/BackgroundPakPetaniMobile.png');
         background-repeat: no-repeat;
     }
 
     .candraKirana {
-        background-image: url(/img/BackgroundCandraKiranaMobile.png);
+        background-image: url('../img/BackgroundCandraKiranaMobile.png');
         background-repeat: no-repeat;
     }
 
     .tapih {
-        background-image: url(/img/BackgroundTapihMobile.png);
+        background-image: url('../img/BackgroundTapihMobile.png');
         background-repeat: no-repeat;
     }
 
     .ratuPantaiKuta {
-        background-image: url(/img/BackgroundRatuPantaiKutaMobile.png);
+        background-image: url('../img/BackgroundRatuPantaiKutaMobile.png');
         background-repeat: no-repeat;
     }
     
@@ -438,7 +438,7 @@ button:hover {
     .descriptionCharacter {
         width: 90vw;
         height: 87vh;
-        background-image: url(/img/texture.avif);
+        background-image: url('../img/texture.avif');
         background-repeat: no-repeat;
         background-size: auto 85vh;
         padding: 8vw;
