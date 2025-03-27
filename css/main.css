@@ -1,0 +1,485 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+body {
+    text-align: center;
+    background-color: #EFE6D3;
+    margin: 0;
+    padding-top: 0;
+    background-image: url(/img/BackgroundHeader-06.png);
+    background-size: 100vw auto;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: Header;
+    src: url(/font/youngserif-regular.ttf);
+}
+
+@font-face {
+    font-family: SubHeader;
+    src: url(/font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Body;
+    src: url(/font/Montserrat-Regular.ttf);
+}
+
+h1 {
+    font-family: Header;
+    color: #352B22;
+    font-size: 3vw;
+}
+
+.question {
+    margin: 20px 0;
+}
+
+.question p {
+    font-family: SubHeader;
+    color: #352B22;
+    font-size: 1.3vw;
+    padding: 0 15vw;
+}
+
+#startQuiz {
+    width: 15vw; 
+    height: 10vh; 
+    font-size: 1.5vw;
+}
+
+button {
+    padding: 1vh 1vw;
+    margin: 5px;
+    background-color: #822E24;
+    color: #EFE6D3;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    font-family: Body;
+    font-size: 1vw;
+}
+
+button:hover {
+    background-color: #D09610;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 2vw;
+}
+
+.answer {
+    width: 100vw;
+    margin: 1vh 0;
+}
+
+
+.characterContainer {
+    background-size: auto 100vh;
+    background-repeat: none;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.toba {
+    background-image: url(/img/BackgroundToba.png);
+}
+
+.kweiya {
+    background-image: url(/img/BackgroundKweiya.png);
+}
+
+.majojaru {
+    background-image: url(/img/BackgroundMajojaru.png);
+}
+
+.putriTandampalik {
+    background-image: url(/img/BackgroundPutriTandampalik.png);
+}
+
+.pakPetani {
+    background-image: url(/img/BackgroundPakPetani.png);
+}
+
+.candraKirana {
+    background-image: url(/img/BackgroundCandraKirana.png);
+}
+
+.tapih {
+    background-image: url(/img/BackgroundTapih.png);
+}
+
+.ratuPantaiKuta {
+    background-image: url(/img/BackgroundRatuPantaiKuta.png);
+}
+
+.imageCharacter {
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    float: left;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.imageCharacter img {
+    width: 30vw;
+    height: auto;
+    margin-bottom: 15vh;
+}
+
+.descriptionCharacter {
+    width: 64vw;
+    height: 80vh;
+    background-image: url(/img/texture.avif);
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    padding: 8vw;
+    margin: 10vh 3vw 10vh 0;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    float: left;
+    text-align: center;
+}
+
+.descriptionCharacter h1 {
+    font-size: 5vw;
+    margin: 1vw;
+}
+
+.descriptionCharacter p {
+    font-family: Body;
+    font-size: 1.2vw;
+}
+
+.descriptionCharacter a {
+    font-family: Body;
+    font-size: 1vw;
+    color: #822E24;
+}
+
+.descriptionCharacter a:hover {
+    color: #D09610;
+}
+
+.retry {
+    padding: 2vh 3vw;
+    background-color: #822E24;
+    text-decoration: none;
+    color: #EFE6D3;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    font-family: Body;
+    font-size: 1vw;
+    margin-top: 5vh;
+}
+
+.retry:hover {
+    background-color: #D09610;
+}
+
+
+
+@media (max-width:1024px) {
+    body {
+        text-align: center;
+        background-color: #EFE6D3;
+        margin: 0;
+        padding-top: 0;
+        background-image: url(/img/BackgroundHeaderTablet-01.png);
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+    
+    .question {
+        margin: 20px 0;
+    }
+    
+    .question p {
+        font-size: 2.5vw;
+        padding: 0 10vw;
+    }
+    
+    #startQuiz {
+        width: 30vw; 
+        height: 7vh; 
+        font-size: 3vw;
+    }
+    
+    button {
+        width: 86vw;
+        padding: 1vh 5vw;
+        margin: 5px;
+        border-radius: 0.5vw;
+        font-size: 2vw;
+    }
+
+    .answer {
+        width: 86vw;
+        margin: 1vh 7vw;
+    }
+
+    .characterContainer {
+        background-size: 100vw auto;
+        background-repeat: none;
+        position: relative;
+    }
+
+    .toba {
+        background-image: url(/img/BackgroundTobaMobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .kweiya {
+        background-image: url(/img/BackgroundKweiyaMobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .majojaru {
+        background-image: url(/img/BackgroundMajojaruMobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .putriTandampalik {
+        background-image: url(/img/BackgroundPutriTandampalikMobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .pakPetani {
+        background-image: url(/img/BackgroundPakPetaniMobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .candraKirana {
+        background-image: url(/img/BackgroundCandraKiranaMobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .tapih {
+        background-image: url(/img/BackgroundTapihMobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .ratuPantaiKuta {
+        background-image: url(/img/BackgroundRatuPantaiKutaMobile.png);
+        background-repeat: no-repeat;
+    }
+    
+    .imageCharacter {
+        width: 100vw;
+        height: auto;
+    }
+    
+    .imageCharacter img {
+        width: 85vw;
+        height: auto;
+    }
+    
+    .descriptionCharacter {
+        width: 90vw;
+        height: 112vh;
+        background-image: url(/img/texture.avif);
+        background-repeat: no-repeat;
+        background-size: auto 110vh;
+        padding: 8vw;
+        margin: -7vh 5vw 10vh 5vw;
+    }
+    
+    .descriptionCharacter h1 {
+        font-size: 12vw;
+        margin-top: -5vh;
+    }
+    
+    .descriptionCharacter p {
+        font-family: Body;
+        font-size: 4vw;
+    }
+    
+    .descriptionCharacter a {
+        font-family: Body;
+        font-size: 4vw;
+        color: #822E24;
+    }
+    
+    .descriptionCharacter a:hover {
+        color: #D09610;
+    }
+    
+    .retry {
+        padding: 2vh 5vw;
+        background-color: #822E24;
+        text-decoration: none;
+        color: #EFE6D3;
+        border: none;
+        border-radius: 0.5vw;
+        cursor: pointer;
+        font-family: Body;
+        font-size: 4vw;
+        margin-top: 5vh;
+    }
+    
+    .retry:hover {
+        background-color: #D09610;
+    }
+}
+
+@media (max-width:600px) {
+    body {
+        background-image: url(/img/BackgroundHeaderMobile-02.png);
+    }
+
+    h1 {
+        font-size: 7vw;
+        padding: 0 5vw;
+    }
+    
+    .question {
+        margin: 10px 0;
+    }
+    
+    .question p {
+        font-size: 4vw;
+        padding: 0 5vw;
+    }
+    
+    #startQuiz {
+        width: 50vw; 
+        height: 7vh; 
+        font-size: 5vw;
+    }
+    
+    button {
+        width: 86vw;
+        padding: 1vh 5vw;
+        margin: 5px;
+        border-radius: 0.5vw;
+        font-size: 3.5vw;
+    }
+
+    .answer {
+        width: 86vw;
+        margin: 1vh 7vw;
+    }
+
+    .characterContainer {
+        background-image: url(/img/BackgroundTobaMobile.png);
+        background-size: 100vw auto;
+        background-repeat: none;
+        position: relative;
+    }
+
+    .toba {
+        background-image: url(/img/BackgroundTobaMobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .kweiya {
+        background-image: url(/img/BackgroundKweiyaMobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .majojaru {
+        background-image: url(/img/BackgroundMajojaruMobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .putriTandampalik {
+        background-image: url(/img/BackgroundPutriTandampalikMobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .pakPetani {
+        background-image: url(/img/BackgroundPakPetaniMobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .candraKirana {
+        background-image: url(/img/BackgroundCandraKiranaMobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .tapih {
+        background-image: url(/img/BackgroundTapihMobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .ratuPantaiKuta {
+        background-image: url(/img/BackgroundRatuPantaiKutaMobile.png);
+        background-repeat: no-repeat;
+    }
+    
+    .imageCharacter {
+        width: 100vw;
+        height: auto;
+    }
+    
+    .imageCharacter img {
+        width: 100vw;
+        height: auto;
+    }
+    
+    .descriptionCharacter {
+        width: 90vw;
+        height: 87vh;
+        background-image: url(/img/texture.avif);
+        background-repeat: no-repeat;
+        background-size: auto 85vh;
+        padding: 8vw;
+        margin: -7vh 5vw 10vh 5vw;
+    }
+    
+    .descriptionCharacter h1 {
+        font-size: 12vw;
+        margin-top: -5vh;
+    }
+    
+    .descriptionCharacter p {
+        font-family: Body;
+        font-size: 4vw;
+    }
+    
+    .descriptionCharacter a {
+        font-family: Body;
+        font-size: 4vw;
+        color: #822E24;
+    }
+    
+    .descriptionCharacter a:hover {
+        color: #D09610;
+    }
+    
+    .retry {
+        padding: 2vh 5vw;
+        background-color: #822E24;
+        text-decoration: none;
+        color: #EFE6D3;
+        border: none;
+        border-radius: 0.5vw;
+        cursor: pointer;
+        font-family: Body;
+        font-size: 4vw;
+        margin-top: 5vh;
+    }
+    
+    .retry:hover {
+        background-color: #D09610;
+    }
+    
+}
